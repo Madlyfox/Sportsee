@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.appContainer {
+  main {
+    display: flex;
+    position: relative;
+    padding: 0 100px 0 200px;
+    justify-content: flex-end;
+    .content {
+      display: flex;
+      width: 100%;
+      flex-flow: column;
+      justify-content: center;
+      font-family: "Roboto", sans-serif;
+      .header {
+        .inline {
+          display: flex;
+          font-size: 35px;
+          h1 {
+            margin-bottom: 0;
+          }
+          .red {
+            color: red;
+            margin-left: 25px;
+          }
+        }
+        .obj {
+          font-size: 25px;
+        }
+      }
+      .data {
+        display: flex;
+        padding: 50px 0;
+        justify-content: space-between;
+        height: 100%;
+
+        .graph {
+          display: flex;
+          width: 75%;
+          flex-flow: column wrap;
+          justify-content: space-evenly;
+          row-gap: 30px;
+          column-gap: 0;
+          .daily {
+            position: relative;
+            h3 {
+              position: absolute;
+              top: 0;
+            }
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fbfbfb;
+          }
+          .graph_mini {
+            display: flex;
+            justify-content: space-between;
+            .average {
+              width: 300px;
+              height: 263px;
+              position: relative;
+
+              padding: 10px;
+              background-color: #ff0000;
+              border-radius: 10px;
+              p {
+                color: white;
+                font-size: 20px;
+                margin: 10px 0 0 25px;
+                width: 200px;
+              }
+            }
+            .radar {
+              width: 300px;
+              height: 263px;
+              padding: 10px;
+              background-color: #282d30;
+              border-radius: 10px;
+            }
+            .radial {
+              position: relative;
+              width: 300px;
+              height: 263px;
+              padding: 10px;
+              background-color: #fbfbfb;
+              border-radius: 10px;
+              font-size: 30px;
+              p {
+                color: #282d30;
+                font-size: 25px;
+                position: absolute;
+                margin: 10px 0 0 25px;
+              }
+            }
+          }
+        }
+      }
+      .info {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+        width: 300px;
+        .card {
+          display: flex;
+          align-items: center;
+          padding: 30px;
+          background-color: rgb(229, 229, 229);
+
+          .logo-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 70px;
+            border-radius: 5px;
+
+            img {
+              height: 20px;
+              width: 19px;
+            }
+          }
+          .red {
+            background-color: rgba(240, 128, 128, 0.333);
+          }
+          .blue {
+            background-color: rgba(173, 216, 230, 0.484);
+          }
+          .yellow {
+            background-color: rgba(255, 255, 224, 0.484);
+          }
+          .pink {
+            background-color: rgba(255, 192, 203, 0.484);
+          }
+          .text {
+            display: flex;
+            flex-flow: column;
+            margin: 0 20px;
+            gap: 10px;
+            h3 {
+              margin: 0 0;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
