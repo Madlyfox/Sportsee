@@ -31,6 +31,19 @@ const Daily = () => {
       return index;
     }
 
+    const CustomTooltip = ({ active, payload, label }) => {
+      if (active && payload && payload.length) {
+        return (
+          <div className="custom-tooltip">
+            <p className="label">{`${payload[0].value} kg`}</p>
+            <p className="desc">{`${payload[1].value} kcal`}</p>
+          </div>
+        );
+      }
+
+      return null;
+    };
+
     return (
       <ResponsiveContainer>
         <BarChart data={data.sessions} barGap={10}>
@@ -49,7 +62,7 @@ const Daily = () => {
             axisLine={false}
             tickSize={20}
           />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Legend verticalAlign="top" align="right" height={50} />
           <Bar
             dataKey="kilogram"

@@ -43,6 +43,23 @@
           column-gap: 0;
           .daily {
             position: relative;
+
+            .recharts-tooltip-wrapper {
+              background-color: #ff0000;
+              border: none;
+              padding: 10px;
+              color: white;
+              .customTooltip {
+                line-height: 5px;
+                border: none;
+
+                .tooltipTitle {
+                  margin: -10px;
+                  color: #666;
+                  top: 5px;
+                }
+              }
+            }
             h3 {
               position: absolute;
               top: 0;
@@ -69,6 +86,13 @@
                 font-size: 20px;
                 margin: 10px 0 0 25px;
                 width: 200px;
+              }
+              .recharts-tooltip-wrapper {
+                background-color: white;
+                border: none;
+                .customTooltip {
+                  line-height: 5px;
+                }
               }
             }
             .radar {

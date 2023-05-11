@@ -27,6 +27,7 @@ const Radial = () => {
         fill: "#ff0000",
       },
     ];
+    console.log(user.todayScore);
 
     return (
       <ResponsiveContainer width="100%" height="100%">
